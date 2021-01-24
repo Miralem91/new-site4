@@ -1,0 +1,357 @@
+/*UNIVERSAL CSS*/
+
+p{
+    font-size: 17px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #0a0a0a;
+}
+.container{
+    background-color: white;
+}
+body{
+    background-color: #ddd;
+}
+.small-print{
+    font-size: 11px;
+    color: #e6e6e6;
+}
+
+
+.header-content{
+    display: flex;
+    justify-content: space-around;
+}
+.header-content img{
+    width: 50%;
+    margin-left: 10px;
+
+}
+.btn-txt{
+    width: 50%;
+    text-align: right;
+ margin-right: 15px;
+ margin-top: 10px;
+}
+.header-btn{
+    background-color: #F0882D;;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: .85rem;
+}
+.btn-txt p{
+    margin-top: 5px;
+    font-weight: 700;
+}
+.article-header h1{
+   font-size: 25px;
+   line-height: 1.2;
+   letter-spacing: 0px;
+   font-family: 'Nunito Sans';
+   margin-bottom: 0px;
+   font-weight: 800;
+   font-style: normal;
+}
+.author{
+    display: flex;
+    border-top: 0.5px solid rgba(128, 128, 128, 0.37);
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.37);
+    padding: 10px;
+    height: 50px;
+}
+.author img{
+    max-width:100% ;
+}
+.author-info{
+    height: 45px;
+}
+.author-info p{
+font-size: 12px;
+margin-left: 12px;
+color: grey;
+}
+.card-img{
+    width: 100%;
+    margin: 0 auto;
+}
+.card-img-div{
+    background: url('../assets/images/card.png');
+    width: 100%;
+    height: 380px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto
+}
+.article-subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+}
+.survey-age-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.age-card{
+    max-width: 138px;
+    max-height: 180px;
+    border: 4px solid #3399DB;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: .5s ease;
+}
+.age-card:hover{
+    border: 4px solid orange;
+}
+.age-card img{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.age-card-footer{
+    background-color:#3399DB;
+    margin-bottom: 0px;
+    color: white;
+}
+
+
+.age-card-footer:hover{
+    background-color: orange;
+    margin-bottom: 0px;
+    color: white;
+}
+
+/*AGE CARDS*/
+.survey-ages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+}
+.card-age{
+    background-color: #3399DB;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 11px;
+    text-align: center;
+    max-width: 138px;
+    max-height: 180px;
+    transition: 0.5s ease;
+
+}
+.card-age:hover{
+    background-color: orange;
+    height: 150%;
+
+}
+.card-age p{
+    color: white;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 20px !important;
+    font-family: 'Bebas-Neue',  Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 1.25rem;
+}
+.card-age-div{
+    background-color: white !important;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3px;
+    background: url('../assets/images/1.png');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: top;
+    background-position-y: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 130px;
+    height: 145px;
+    max-width: 138px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.img-2{
+    background: url('../assets/images/2.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 10px;    
+    width: 130px;
+}
+.img-3{
+    background: url('../assets/images/3.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 10px;
+    width: 130px;
+}
+.img-4{
+    background: url('../assets/images/4.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 10px;
+    width: 130px;
+}
+@media only screen and (min-width: 500px){
+    .survey-ages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+}
+@media only screen and (min-width: 816px){
+    .survey-ages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+}
+/*AGE CARDS ENDS*/
+
+.btn-survey{
+    background-color:  #F0882D;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 22px;
+    height: 55px;
+    width: 270px;
+    border-radius: 5px;
+
+}
+.btn-survey:hover{
+    background-color: rgb(255, 180, 42);
+}
+.uk-img{
+    width: 100%;
+}
+
+.footer{
+    background: linear-gradient(0deg, #616160 0%, #414140 100%);
+}
+.footer-header{
+    display: flex;
+}
+.footer-logo{
+    width: 100%;
+}
+.footer-logo img{
+    width: 70%;
+}
+.footer-body{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu ul li{
+    list-style: none;
+}
+.footer-menu ul li a{
+    color: rgb(173, 173, 173);
+    font-size: 12px;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.footer-content{
+    font-size: 12px;
+    color: rgb(173, 173, 173);
+}
+
+
+/*DESKTOP*/
+
+@media only screen and (min-width : 900px){
+    .container{
+        max-width: 900px;
+    }
+    .header-content img{
+        width: 33%;
+        margin-left: 10px;
+    
+    }
+    .btn-txt{
+        width: 60%;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .btn-txt p{
+        font-weight: 600;
+        color: rgb(92, 92, 92);
+    }
+    .header-btn{
+        background-color: #F0882D;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 1.25rem;
+        width: 40%;
+        height: 60px;
+        transition: .5s ease;
+    }
+    .header-btn:hover{
+        background-color: rgb(212, 138, 0);
+    }
+    .author{
+        display: flex;
+        border-top: 0.5px solid rgba(128, 128, 128, 0.37);
+        border-bottom: 0.5px solid rgba(128, 128, 128, 0.37);
+        padding: 10px;
+        height: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .article-title{
+        font-size: 35px !important;
+        font-family: 'Nunito', sans-serif;
+    }
+    .author img{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .how-section p{
+        text-align: center;
+    }
+
+    .uk-img{
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+    .footer{
+        padding-top: 50px !important;
+    }
+    .footer-logo img{
+        width: 25%;
+    }
+  
+
+
+}
